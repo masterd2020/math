@@ -1,4 +1,4 @@
-const root = require('../index.js');
+const root = require('../main.js');
 
 describe('Testing', () => {
 	it('should return a welcome message', () => {

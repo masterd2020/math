@@ -1,13 +1,15 @@
 {
 	"name": "@tmasterd/math",
-	"version": "1.0.0",
+	"version": "0.0.0-development",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"test": "jest",
 		"lint": "npx eslint",
 		"format": "prettier --write --ignore-unknown ./**/*.js",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"semantic-release": "semantic-release --branches main",
+		"commit": "cz"
 	},
 	"author": "Fasasi Toheeb <tohebayomide11@gmail.com>",
 	"license": "ISC",
@@ -31,12 +33,20 @@
 		"url": "https://github.com/masterd2020/math.git"
 	},
 	"devDependencies": {
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-config-standard": "^17.1.0",
 		"husky": "^8.0.3",
 		"jest": "^29.7.0",
 		"lint-staged": "^14.0.1",
-		"prettier": "^3.0.3"
+		"markdownlint-cli": "^0.36.0",
+		"prettier": "^3.0.3",
+		"semantic-release": "^22.0.1"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
