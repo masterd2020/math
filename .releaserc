@@ -44,6 +44,15 @@
 			{
 				"changelogFile": "CHANGELOG.md"
 			}
+		],
+		[
+			"@semantic-release/git",
+			{
+				"assets": [
+					"CHANGELOG.md"
+				],
+				"message": "chore(release): set `package.json` to ${nextRelease.version}\n\n${nextRelease.notes}"
+			}
 		]
 	]
 }
