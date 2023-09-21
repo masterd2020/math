@@ -4,6 +4,6 @@ describe('Testing', () => {
 	it('should return a welcome message', () => {
 		const message = root.greet();
 
-		expect(message).toBe('Welcome');
+		expect(message).toBe('Welcome here');
 	});
 });

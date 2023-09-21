@@ -1,3 +1,3 @@
 module.exports = {
-	greet: () => 'Welcome',
+	greet: () => 'Welcome here',
 };
