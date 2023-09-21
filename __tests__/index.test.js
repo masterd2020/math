@@ -12,4 +12,10 @@ describe('Testing', () => {
 
 		expect(message).toBe('Good morning');
 	});
+
+	it('should return a welcome message', () => {
+		const message = root.greetAfternoon();
+
+		expect(message).toBe('Good Afternoon');
+	});
 });
