@@ -1,3 +1,5 @@
+console.log('hello');
+
 module.exports = {
 	greet: () => 'Welcome here',
 	greetMorning: () => 'Good morning',
