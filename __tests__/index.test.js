@@ -25,3 +25,11 @@ describe('Testing', () => {
 		expect(message).toBe('Good Evening.');
 	});
 });
+
+describe('Arithmetic Operation', () => {
+	it('should add two number together', () => {
+		const result = root.ARITHMETIC.add(2, 3);
+
+		expect(result).toBe(5);
+	});
+});
